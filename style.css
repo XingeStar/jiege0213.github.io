@@ -14,7 +14,7 @@ index{
     margin: 0 auto;
     position: absolute;
     top: 0;
-    right: 10%;
+    right: 200px;
 }
 download{
     color: rgb(255, 255, 255);
@@ -28,7 +28,7 @@ download{
     margin: 0 auto;
     position: absolute;
     top: 0;
-    right: 6%;
+    right: 120px;
 }
 chat{
     color: rgb(255, 255, 255);
