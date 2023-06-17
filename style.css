@@ -54,9 +54,7 @@ chat{
     chat:hover {
         font-weight:bold;
         color:rgb(255, 255, 255);
-        box-shadow: 0px 2px rgb(255, 255, 255);
-}      
-.header {
-    background-color: #0787ff;
-}
-.id{size: 50;}
+        box-shadow: 0px 2px rgb(255, 255, 255);}
+.title{
+    font-size: 50px;
+    margin-left:40% ;}
