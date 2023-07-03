@@ -1,0 +1,69 @@
+
+@keyframes bgmove{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+    }
+body{
+    justify-content: center;
+    align-items: center;
+    height: 97.8vh;
+    background-image: linear-gradient(125deg,#62e0ff,#FFFFFF);
+    background-size: 400%;
+    animation: bgmove 15s infinite;
+}
+.glow {
+    color: #fff;
+    text-shadow: 0 0 10px #9ff5ff, 0 0 20px #9ff5ff, 0 0 30px #9ff5ff, 0 0 40px #ffffff, 0 0 70px #9ff5ff, 0 0 80px #ffffff, 0 0 100px #9ff5ff, 0 0 150px #9ff5ff;
+}
+.header{
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: lighter;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    background-color: #9ff5ff;
+}
+index{
+    border-bottom-left-radius: 15%;
+    right: 250px;
+}
+download{
+    right: 110px;
+}
+chat{
+    right: 0;}
+donate{
+    right: 180px;
+    }
+    index:hover {
+        font-weight:bold;
+        color:rgb(255, 255, 255);
+        box-shadow: 0px 2px rgb(255, 255, 255);}
+    download:hover {
+        font-weight:bold;
+        color:rgb(255, 255, 255);
+        box-shadow: 0px 2px rgb(255, 255, 255);}
+    chat:hover {
+        font-weight:bold;
+        color:rgb(255, 255, 255);
+        box-shadow: 0px 2px rgb(255, 255, 255);}
+    donate:hover {
+        font-weight:bold;
+        color:rgb(255, 255, 255);
+        box-shadow: 0px 2px rgb(255, 255, 255);}
+.title{
+    font-size: 50px;
+    margin-left:40% ;}
