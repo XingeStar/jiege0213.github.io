@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>注册和登录</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>注册</h1>
+    <form id="registerForm">
+        <label for="registerUsername">用户名：</label>
+        <input type="text" id="registerUsername" name="registerUsername" required><br>
+
+        <label for="registerPassword">密码：</label>
+        <input type="password" id="registerPassword" name="registerPassword" required><br>
+
+        <button type="submit">注册</button>
+    </form>
+
+    <h1>登录</h1>
+    <form id="loginForm">
+        <label for="loginUsername">用户名：</label>
+        <input type="text" id="loginUsername" name="loginUsername" required><br>
+
+        <label for="loginPassword">密码：</label>
+        <input type="password" id="loginPassword" name="loginPassword" required><br>
+
+        <button type="submit">登录</button>
+    </form>
+
+    <div id="message"></div>
+</body>
+</html>

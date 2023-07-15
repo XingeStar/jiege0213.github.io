@@ -68,6 +68,6 @@ donate{
     font-size: 50px;
     margin-left:40% ;}
 @font-face {
-    font-family: comic sans ms;
-    src: url(./fonts/comic_sans_ms//comic.ttf);
+    font-family: comic;
+    src: url(./fonts/comic_sans_ms/comic.ttf) format("comic.ttf");
 }
