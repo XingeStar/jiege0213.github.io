@@ -19,6 +19,7 @@ body{
     animation: bgmove 15s infinite;
 }
 .glow {
+    display: flex;
     color: #fff;
     text-shadow: 0 0 10px #9ff5ff, 0 0 20px #9ff5ff, 0 0 30px #9ff5ff, 0 0 40px #ffffff, 0 0 70px #9ff5ff, 0 0 80px #ffffff, 0 0 100px #9ff5ff, 0 0 150px #9ff5ff;
 }
@@ -32,9 +33,11 @@ body{
     cursor: pointer;
     display: block;
     margin: 0 auto;
-    position: absolute;
+    position: fixed;
     top: 0;
-    background-color: #9ff5ff;}
+    background-color: #9ff5ff;
+    z-index: 5;
+}
 index{
     border-bottom-left-radius: 15%;
     right: 250px;
@@ -86,4 +89,10 @@ span{
 @font-face {
     font-family: comic;
     src: url(./fonts/comic_sans_ms/comic.ttf) format("comic.ttf");
+}
+logo{
+    top: 0;
+    position: fixed;
+    z-index: 5;
+    -webkit-mask: radial-gradient(black 50%, transparent 100%);
 }

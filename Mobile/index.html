@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    
+    <link rel="icon" href="image/Logo.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>JieXin Game</title><img src="" alt="">
+    <meta name="author" content="Jiege & Xinge">
+    <link href="../style.css" rel="stylesheet" type="text/css"/>
+    <script>
+        function IsPhone() {
+            //获取浏览器navigator对象的userAgent属性（浏览器用于HTTP请求的用户代理头的值）
+            var info = navigator.userAgent;
+            //通过正则表达式的test方法判断是否包含“Mobile”字符串
+            var isPhone = /mobile/i.test(info);
+            //如果包含“Mobile”（是手机设备）则返回true
+            return isPhone;
+        }
+        var isphone = IsPhone();
+        if (isphone==false){
+            window.location.href = "../index.html";
+        }
+    </script>
+    <style type="text/css">
+        h1{
+            font-size: 150px;
+            font-family: comic;
+            color: #fff;
+            text-shadow: 0 0 10px #e9f6f7, 0 0 20px #9ff5ff, 0 0 30px #9ff5ff, 0 0 40px #ffffff, 0 0 70px #9ff5ff, 0 0 80px #ffffff, 0 0 100px #9ff5ff, 0 0 150px #9ff5ff;
+            text-align: center;
+        }
+        h3{
+            font-size: 80px;
+            font-family: comic;
+            color: #fff;
+            text-shadow: 0 0 10px #e9f6f7, 0 0 20px #9ff5ff, 0 0 30px #9ff5ff, 0 0 40px #ffffff, 0 0 70px #9ff5ff, 0 0 80px #ffffff, 0 0 100px #9ff5ff, 0 0 150px #9ff5ff;
+            text-align: center;
+        }
+        .img{
+            border-radius: 50%;
+        }
+        bilibili{
+            display:flex;
+            background-color: #9ff5ff;
+        }
+        </style>
+</head>
+<body>
+    <logo class="none"><img  class="logo"src="../image/logo.png" alt=""></logo>
+    <h1>JieXin Game</h1>
+    <h3>很抱歉,我们团队目前未做手机版网站,目前只能在电脑访问,我们最慢将在2023年8月23日上架</h3>
+    <bilibili>
+        <span class="glow">传送门</span>
+        <xinge><a href="https://space.bilibili.com/507645564?spm_id_from=333.337.0.0" target="_blank"><img class="img" src="../image/8d51ea4b6df472998823616b93cd8d7fcda00e4b.jpg@240w_240h_1c_1s_!web-avatar-space-header.png" alt="" class="img"></xinge>
+        <jie><a href="https://space.bilibili.com/1144126402?spm_id_from=333.1007.0.0" target="_blank"><img src="../image/jie.jpg" alt=""class="img"></jie>
+    </bilibili>
+
+</body>
+</html>

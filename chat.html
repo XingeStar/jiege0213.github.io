@@ -6,6 +6,7 @@
     <title>JieXin Game</title><img src="" alt="">
     <meta name="author" content="Jiege & Xinge">
     <link href="./style.css" rel="stylesheet" type="text/css"/>
+    <script src="JavaScript/Global.js"></script>
     <style type="text/css">
     h1{
         color: black;
@@ -18,12 +19,22 @@
         color:black;
         font-size: 10px;
     }
-    email{
-        font-family: comic;
+    .top{
+        position: absolute;
+        top: 100px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    qq{
-        font-family: comic;
+    h1{
+        background-image: -webkit-linear-gradient(bottom,rgb(0, 187, 255),rgb(126, 255, 255),white);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
+    h2{
+        background-image: -webkit-linear-gradient(bottom,rgb(0, 187, 255),rgb(126, 255, 255),white);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
     </style>
 </head>
 <body>
@@ -34,10 +45,12 @@
         <chat class="header" onclick="window.location.href='./chat.html'"type="button">联系我们</chat>
         <donate class="header" onclick="window.location.href='./donate.html'"type="button">投喂</donate>
     </header>
-    <h1>与我们联系</h1>
-    <h2>Emai：<email>return@jiexin.fun</email>
-    </h2>
-    <h2>QQ：<qq>259931513</qq></h2>
-    <a href="https://discord.gg/ksUKTbRjna" target="_blank"><img src="image/Discord.png" alt="Join"></a>
+    <headtexter class="top">
+        <h1>与我们联系</h1>
+        <h2>Emai：return@jiexin.fun</h2>
+        <h2>QQ：259931513</h2>
+        <a href="https://discord.gg/ksUKTbRjna" target="_blank"><img src="image/Discord.png" alt="Join"></a>
+    </headtexter>
+    
 </body>
 </html>

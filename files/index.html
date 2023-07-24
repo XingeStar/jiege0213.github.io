@@ -6,24 +6,56 @@
     <title>JieXin Game</title><img src="" alt="">
     <meta name="author" content="Jiege & Xinge">
     <link href="../style.css" rel="stylesheet" type="text/css"/>
+    <script src="JavaScript/Global.js"></script>
     <style>
+        @keyframes scale{
+            0%{
+                transform: scale(1.0);
+            }
+            25%{
+                transform: scale(1.05);
+            }
+            50%{
+                transform: scale(1.07);
+            }
+            75%{
+                transform: scale(1.09);
+            }
+            100%{
+                transform: scale(1.1);
+            }
+        }
         .pvz{
             background-image:linear-gradient(
                 #FFF476,#A15727
             );
             border-radius: 20px;
         }
+        game{
+            position: absolute;
+            top: 100px;
+        }
+        .game{
+            transform: scale(1.0);
+        }
+        .game:hover{
+            animation: scale 0.1s ease-in-out;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
+    <logo><img class="logo" src="../image/logo.png" alt=""></logo>
     <header class="glow">
         <index class="header" onclick="window.location.href='../index.html'" type="button">主页</index>
         <download class="header" onclick="window.location.href='./index.html'"type="button">下载</download>
         <chat class="header" onclick="window.location.href='../chat.html'"type="button">联系我们</chat>
         <donate class="header" onclick="window.location.href='../donate.html'"type="button">投喂</donate>
     </header>
-    <gm><a href="./game_files/greenman.zip"><img src="../image/g.png" alt=""></a></gm>
-    <nj><a href="./game_files/Ninja GayDen.zip"><img src="../image/n.png" alt=""></a></nj>
-    <pvz><a href="./game_files/pvz.zip"><img class="pvz" src="../image/pvz.png" alt=""></a></pvz>
+    <game>
+        <a href="./game_files/greenman.zip"><img class="game" src="../image/g.png" alt="Greenman"></a>
+        <a href="./game_files/Ninja GayDen.zip"><img class="game" src="../image/n.png" alt="Ninja Gaiden"></a>
+        <a href="./game_files/pvz.zip"><img class="pvz game" src="../image/pvz.png" alt="Plant VS Zombie"></a>   
+    </game>
 </body>
 </html>

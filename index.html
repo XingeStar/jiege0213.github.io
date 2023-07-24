@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <script src="./js/js.js"></script>
     <link rel="icon" href="image/Logo.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <title>JieXin Game</title><img src="" alt="">
     <meta name="author" content="Jiege & Xinge">
     <link href="./style.css" rel="stylesheet" type="text/css"/>
+    <script src="JavaScript/Global.js"></script>
     <style type="text/css">
         h1{
+            font-size: 50px;
             font-family: comic;
             color: #fff;
-            text-shadow: 0 0 10px #9ff5ff, 0 0 20px #9ff5ff, 0 0 30px #9ff5ff, 0 0 40px #ffffff, 0 0 70px #9ff5ff, 0 0 80px #ffffff, 0 0 100px #9ff5ff, 0 0 150px #9ff5ff;
+            text-shadow: 0 0 10px #e9f6f7, 0 0 20px #9ff5ff, 0 0 30px #9ff5ff, 0 0 40px #ffffff, 0 0 70px #9ff5ff, 0 0 80px #ffffff, 0 0 100px #9ff5ff, 0 0 150px #9ff5ff;
             text-align: center;
         }
-        </style>
+        @keyframes scale{
+            0%{
+                transform: scale(1.0);
+            }
+            25%{
+                transform: scale(1.05);
+            }
+            50%{
+                transform: scale(1.07);
+            }
+            75%{
+                transform: scale(1.09);
+            }
+            100%{
+                transform: scale(1.1);
+            }
+        }
+        .img{
+            border-radius: 50%;
+        }
+        .img:hover{
+            animation: scale 0.1s ease-in-out;
+            transform: scale(1.1);
+        }
+        bilibili{
+            display:flex;
+            background-color: #9ff5ff;
+        }
+    </style>
 </head>
 <body>
     <logo class="none"><img  class="logo"src="./image/logo.png" alt=""></logo>
@@ -25,10 +54,12 @@
         <donate class="header" onclick="window.location.href='./donate.html'"type="button">投喂</donate>
     </header>
     <h1>JieXin Game</h1>
-    <h2>
-    <bilibili>传送门
-        <xinge><a href="https://space.bilibili.com/507645564?spm_id_from=333.337.0.0" target="_blank"><img src="./image/8d51ea4b6df472998823616b93cd8d7fcda00e4b.jpg@240w_240h_1c_1s_!web-avatar-space-header.png" alt="" class="img"></xinge> <jie><a href="https://space.bilibili.com/1144126402?spm_id_from=333.1007.0.0" target="_blank"><img src="./image/jie.jpg" alt=""class="img"></jie>
+
+    <bilibili>
+        <span class="glow">传送门</span>
+        <xinge><a href="https://space.bilibili.com/507645564?spm_id_from=333.337.0.0" target="_blank"><img class="img" src="./image/8d51ea4b6df472998823616b93cd8d7fcda00e4b.jpg@240w_240h_1c_1s_!web-avatar-space-header.png" alt="" class="img"></xinge>
+        <jie><a href="https://space.bilibili.com/1144126402?spm_id_from=333.1007.0.0" target="_blank"><img src="./image/jie.jpg" alt=""class="img"></jie>
+    
     </bilibili>
-    </h2>
 </body>
 </html>
